@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnet Ball Bounce</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.0/pixi.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="bounce.js"></script>
+<div class="controls">
+    <label for="ball-speed">Speed:</label>
+    <input id="ball-speed" type="number" oninput="changeSpeed(this.value)" placeholder="1">
+</div>
+<div class="controls">
+    <button onclick="restart()">Restart</button>
+</div>
+</body>
+</html>

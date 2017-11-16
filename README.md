@@ -1,15 +1,10 @@
-# Job interview assignment
-We kindly ask you to solve the task below. By solving and submitting this assignment you provide us with insights in how you solve real-world problems. What we will be looking at are topics such as: structuring of code, use of VCS, selection of 3rd party libraries, documentation etc.
+#Opening the solution
+The simulation can be seen by opening the "index.html" file in a browser. The simulation automatically starts with a speed of 1. This is a bit slow, so I suggest that you set it to between 3 and 5. Changing the speed automatically restarts the simulation. If you wish to see the simulation again please press the "Restart" button.
 
-## The task
+#Realism
+I have implemented a crude gravity to make the simulation more realistic. This means that the ball will accelerate on its way down and decelerate on its way up. Furthermore the ball will gradually bounce lower and lower until it finally stops. Finally, the ball will squeeze a bit when it hits the ground.
 
-Implement in Pixi.js a scene featuring the ball in "ball.png" bouncing up and down in an endless loop. Somewhere on the screen please add a control enabling the user to make the ball bounce faster or slower.
-
-- Use Pixi.js as the language. Feel free to use plugins you deem appropriate.
-
-Please employ whatever technique you deem suitable to increase the realism of the animation.
-
-## Expectations
-Make a copy of this repository. Solve the task below. Push your code to a public repo, and send us the link as a reply to our email.
-
-Your solution should include a short readme describing your solution, how to use/test it and any final considerations such as known errors, next steps etc.
+#Considerations
+The next steps could include implementing user-controlled bounce loss or scaling the squeeze to the ball's velocity.
+##Known errors
+The ball sometimes stops completely when it hits the ground at too low speed, which looks crude. This is occurs because I introduced an if-statement to stop the ball from bouncing quickly up and down at the end of the simulation.
